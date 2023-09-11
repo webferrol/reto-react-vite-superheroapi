@@ -6,7 +6,7 @@ Desde a siguiente __URL__ [https://superheroapi.com/](https://superheroapi.com/)
 
 Es necesario un listado de todos los superhéroes que hay disponibles cuando consumimos la __API__
 
-- [] Crear un nuevo proyecto en __Vite__ que podemos llamar __superheroapi-project__
+- [x] Crear un nuevo proyecto en __Vite__ que podemos llamar __superheroapi-project__
 - [] Crear un __mock__ donde poder mostrar el listado sin tener que utilizar la __fetch API__.
   - Podemos mostrar el listado en este punto por la consola del navegador
 - [] Realizar el fetching de datos después de los puntos anteriores
