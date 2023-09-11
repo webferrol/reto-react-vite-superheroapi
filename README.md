@@ -1,14 +1,16 @@
 # Super Heroe Api
 
+![Learning HTML, CSS, JavaScript](./learning-html-css-javascript.jpg)
+
 ## Reto
 
-Desde a siguiente __URL__ [https://superheroapi.com/](https://superheroapi.com/) podemos obtener un listado de superhéroes con sus distintas características.
+Desde la siguiente __URL__ [https://superheroapi.com/](https://superheroapi.com/) podemos obtener un listado de superhéroes con sus distintas características.
 
-Es necesario un listado de todos los superhéroes que hay disponibles cuando consumimos la __API__
+Es necesario obtener información de los superhéroes mediante un __end point__ cuando consumimos la __API__
 
-- [x] Crear un nuevo proyecto en __Vite__ que podemos llamar __superheroapi-project__
-- [] Crear un __mock__ donde poder mostrar el listado sin tener que utilizar la __fetch API__.
-  - Podemos mostrar el listado en este punto por la consola del navegador
+- [] Crear un nuevo proyecto en __Vite__ que podemos llamar __superheroapi-project__
+- [] Crear un __mock__ donde poder mostrar la información sin tener que utilizar la __fetch API__.
+  - Podemos mostrar la información en este punto por la consola del navegador
 - [] Realizar el fetching de datos después de los puntos anteriores
 
 ## Suplementario
@@ -22,19 +24,55 @@ Es necesario un listado de todos los superhéroes que hay disponibles cuando con
 
 - [] Para evitar tener que hacer una llamada cada vez que se refresca la llamada cada vez que se refresca a pantalla es necesario que los datos se queden almacenados en el navegador
 
-## Funciones JavaScript 
+## Lo que necesitas saber JavaScript 
 
-- [fetch](https://github.com/webferrol/react-session#fetch)
+### import / export
+
+1. Exportación: primitivos, no primitivos, funciones
+
+```js
+export let variable_name
+export function function_name() {
+  // Statements
+}
+export const USUARIO = { name: 'Xurxo', edad: 50 }
+```
+
+2. Exportación por defecto
+
+```js
+export default function app () {
+    // Statements
+}
+```
+
+3. Importaciones (nombradas y por defecto)
+
+```js
+import miApp, { variable_name, USUARIO, function_name } from 'path_to_file'
+```
+### fetch
+
+[fetch](https://github.com/webferrol/react-session#fetch)
 
 En el ejemplo que veremos a continuación el __input__ será un __string__ que representa la localización del recurso de red que deseamos obtener. En este caso un fichero plano __json__ que posteriormente lo convertiremos en un __objeto javascript__ con el método __json()__
 
 ```js
 fetch('https://swapi.dev/api/people/1')
-  .then(response => response.json())
+  .then((response) => { return response.json() })
+  .then(data => { console.log(data) })
+```
+La forma resumida de lo anterior
+
+```js
+fetch('https://swapi.dev/api/people/1')
+  .then(response => response.json()) // El return implícito funciona siempre y cuando no pongamos las llaves
   .then(data => console.log(data))
 ```
 
-- [Array.prototype.map](https://github.com/webferrol/react-session#arrayprototypemap)
+### map
+
+[Array.prototype.map](https://github.com/webferrol/react-session#arrayprototypemap)
 
 Para __renderizar listas__ a través de expresiones son perfectas. Ejemplo de [react.dev](https://es.react.dev/learn#rendering-lists):
 
