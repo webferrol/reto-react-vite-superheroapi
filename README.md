@@ -1,6 +1,6 @@
 # Super Heroe Api
 
-![Learning HTML, CSS, JavaScript](./learning-html-css-javascript.jpg)
+<img src="./learning-html-css-javascript.jpg" width="400" alt="Learning HTML, CSS, JavaScript">
 
 ## Reto
 
